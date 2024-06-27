@@ -1,0 +1,33 @@
+{
+  "name": "TP Gen AI",
+  "description": "Extension created to generate data based on user history using AI.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/BOTICON.png"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "declarativeContent",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webNavigation"
+  ],
+
+  "update_url": "https://automation.teleperformance.com.br/ext/mercadolivre/tpgenai-mercadolivre.xml",
+
+  "icons": {
+    "16": "/images/BOTICON.png",
+    "32": "/images/BOTICON.png",
+    "48": "/images/BOTICON.png",
+    "128": "/images/BOTICON.png"
+  },
+  "host_permissions": [ "https://*/*", "*://*/*" ]
+}

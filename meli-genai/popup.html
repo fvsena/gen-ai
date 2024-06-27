@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css" />
+    <script src="popup.js"></script>
+    <script src="dist/jsOtp.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+
+</head>
+<body style="width:370px; height:200px; font-size:70%; overflow-x:no-display" class="bg-dark text-white">
+
+
+    <div class="card border-0 p-2 bg-dark bg-gradient text-white">
+        <div class="card-header bg-dark bg-gradient text-white">
+            <img src="images/BOTICON.png" class="ico" />
+            <strong>TP Gen AI - Teleperformance</strong></div>
+        <div class="card-body">
+            <button id="iniciar" class="btn btn-primary btn-sm">Reiniciar</button>
+
+            <!--<button id="atualizar" class="btn btn-success bg-gradient btn-sm">Atualizar</button>-->
+
+            <!-- <table class="table border-0 mt-3" id="tabela-casos" name="tabela-casos">
+                <thead class="bg-dark text-white bg-gradient">
+                    <tr style="font-size: 70%">
+                        <th scope="col">Caso</th>
+                        <th scope="col">Duracao</th>
+                        <th scope="col">Acao</th>
+                        <th scope="col"></th>
+                        <th scope="col" style="visibility: hidden"></th>
+                    </tr>
+                </thead>
+                <tbody class="bg-dark text-white">
+                </tbody>
+            </table> -->
+        </div>
+    </div>
+
+    <div id="popup" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="text-dark">Caso <span id="idcaso">[[CASO]]</span> tabulado com sucesso!</p>
+                    <button type="button" id="fecharModal" class="btn btn-primary btn-sm" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="container p-1">
+        <footer class="text-center text-lg-start bg-dark text-muted">
+            <div class="text-center p-0 bg-dark text-warning">
+                2023 Copyright: Automation Team | Teleperformance Brazil | V 2.1
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/jquery-3.6.1.min.js"></script>
+</body>
+
+
+</html>
